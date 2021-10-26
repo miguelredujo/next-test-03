@@ -1,0 +1,19 @@
+alerts:
+  - rule: DEPLOYMENT_FAILED
+  - rule: DOMAIN_FAILED
+name: next-test-01
+region: nyc
+services:
+  - build_command: yarn dev
+    environment_slug: node-js
+    github:
+      branch: main
+      deploy_on_push: true
+      repo: miguelredujo/next-test-01
+    http_port: 8080
+    instance_count: 1
+    instance_size_slug: basic-xs
+    name: next-test-01
+    routes:
+      - path: /
+    source_dir: /
