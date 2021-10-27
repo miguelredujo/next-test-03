@@ -15,4 +15,4 @@ jobs:
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
       - name: Deployment
-        run: doctl apps create --spec app.yaml
+        run: doctl apps create --spec config.yaml
