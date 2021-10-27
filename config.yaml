@@ -4,7 +4,7 @@ alerts:
 name: next-test-01
 region: nyc
 services:
-  - build_command: yarn dev
+  - build_command: yarn build
     environment_slug: node-js
     github:
       branch: main
@@ -16,4 +16,5 @@ services:
     name: next-test-01
     routes:
       - path: /
+    run_command: yarn start
     source_dir: /
