@@ -1,9 +1,5 @@
 name: DigitalOcean Basic App Platform Deployment
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
   workflow_dispatch:
 jobs:
   build:
